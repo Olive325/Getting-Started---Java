@@ -1,50 +1,28 @@
 package io.github.olive325;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
+        Person olivia = new Person(21, "Olivia", "Zavala Sherby");
 
-        byte d = 127; // 1 byte
-        byte neg_d = -128;
-        short b = 32767; // 2 bytes
-        short neg_b = -32768;
-        int a = 2147483647; // 4 bytes
-        int neg_a = -2147483648;
-        long c = 9223372036854775807L; // 8 bytes
-        long neg_c = -9223372036854775808L;
+        System.out.println(olivia.getAge());
+        olivia.setAge(-4);
+        System.out.println(olivia.getAge());
 
-        double dd = 3.1415; // 8 bytes
-        float f = 3.14f; // 4 bytes
-        char ch = 'a'
+        Person[] peopleArray = new Person[5];
 
-        int[] int_array = {1,2,4,5,6,7};
+        peopleArray[0] = olivia;
+        peopleArray[1] = new Person(20, "Cynthia", "Beams");
+        peopleArray[2] = new Person(20, "Winn", "Pipes");
+        peopleArray[3] = new Person(21, "Ben", "Butler");
+        peopleArray[4] = new Person(20, "Rashid", "Hong");
 
-        for (int i = 0; i < int_array.length; i++){
-            System.out.println(int_array[i]);
+        for (Person person : peopleArray){
+            System.out.println("Here is a new person shown below");
+            System.out.println(person.getFirstName());
+
         }
 
-        for (int i : int_array){
-            System.out.println(i);
-        }
 
-        List<Integer> dyn_list = new ArrayList<>();
-
-        dyn_list.add(1);
-        dyn_list.add(2);
-        dyn_list.add(7);
-        dyn_list.add(42);
-        dyn_list.add(65);
-        dyn_list.add(67);
-
-        for(int i : dyn_list){
-            System.out.println(i);
-        }
-
-        for (Integer integer : dyn_list) {
-            System.out.println(integer);
-        }
 
 
     }
