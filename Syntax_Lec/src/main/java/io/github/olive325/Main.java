@@ -17,6 +17,7 @@ public class Main {
 
         double dd = 3.1415; // 8 bytes
         float f = 3.14f; // 4 bytes
+        char ch = 'a'
 
         int[] int_array = {1,2,4,5,6,7};
 
