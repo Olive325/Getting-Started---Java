@@ -1,9 +1,9 @@
 package io.github.olive325;
 
 public class FakeClass {
-    public int age;
-    public String firstName;
-    public String lastName;
+    private int age;
+    private String firstName;
+    private String lastName;
 
     public void Fake(int age, String firstName, String lastName){
         this.age = age;
@@ -15,3 +15,4 @@ public class FakeClass {
        return this.age;
     }
 }
+
