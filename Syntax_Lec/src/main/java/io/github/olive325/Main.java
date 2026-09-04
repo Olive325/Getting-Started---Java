@@ -5,7 +5,7 @@ public class Main {
         Person olivia = new Person(21, "Olivia", "Zavala Sherby");
 
         System.out.println(olivia.getAge());
-        olivia.setAge(-4);
+        olivia.setAge(22);
         System.out.println(olivia.getAge());
 
         Person[] peopleArray = new Person[5];
@@ -19,7 +19,6 @@ public class Main {
         for (Person person : peopleArray){
             System.out.println("Here is a new person shown below");
             System.out.println(person.getFirstName());
-
         }
 
 
